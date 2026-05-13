@@ -2,10 +2,10 @@ import React from 'react';
 import './QuickLinks.css';
 
 const links = [
-  { id: 1, title: '농산물\n가격정보', icon: '/assets/icon-price.svg' },
-  { id: 2, title: '병해충\n발생정보', icon: '/assets/icon-bug.svg' },
-  { id: 3, title: '농업기술\n상담', icon: '/assets/icon-consult.svg' },
-  { id: 4, title: '사이버\n식물병원', icon: '/assets/icon-hospital.svg' },
+  { id: 1, title: '농산물\n가격정보', icon: import.meta.env.BASE_URL + 'assets/icon-price.svg' },
+  { id: 2, title: '병해충\n발생정보', icon: import.meta.env.BASE_URL + 'assets/icon-bug.svg' },
+  { id: 3, title: '농업기술\n상담', icon: import.meta.env.BASE_URL + 'assets/icon-consult.svg' },
+  { id: 4, title: '사이버\n식물병원', icon: import.meta.env.BASE_URL + 'assets/icon-hospital.svg' },
 ];
 
 function QuickLinks() {

@@ -6,25 +6,25 @@ const slides = [
     id: 0,
     badge: '연구사업',
     title: '농업의 내일을 설계하는\n첨단 과학의 힘, 경기도가 앞장섭니다.',
-    bg: '/assets/hero-bg-1.png'
+    bg: import.meta.env.BASE_URL + 'assets/hero-bg-1.png'
   },
   {
     id: 1,
     badge: '지도사업',
     title: '농업인의 든든한 파트너,\n현장에서 답을 찾는 맞춤형 지도사업.',
-    bg: '/assets/hero-bg-2.png'
+    bg: import.meta.env.BASE_URL + 'assets/hero-bg-2.png'
   },
   {
     id: 2,
     badge: '품목별 정보',
     title: '심는 순간부터 수확까지,\n성공 농사를 위한 품목별 맞춤 가이드.',
-    bg: '/assets/hero-bg-3.png'
+    bg: import.meta.env.BASE_URL + 'assets/hero-bg-3.png'
   },
   {
     id: 3,
     badge: '신품종 육성',
     title: '경기도의 이름으로 피어난 우리 품종,\n세계의 입맛을 사로잡습니다.',
-    bg: '/assets/hero-bg-4.png'
+    bg: import.meta.env.BASE_URL + 'assets/hero-bg-4.png'
   }
 ];
 
