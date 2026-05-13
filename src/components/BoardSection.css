@@ -1,0 +1,109 @@
+.board-section {
+  padding: 32px 16px;
+  background-color: var(--color-white);
+  width: 100%;
+}
+
+.board-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 16px;
+  border-bottom: 1px solid var(--color-border-dark);
+  padding-bottom: 12px;
+}
+
+.board-title {
+  color: var(--color-text-primary);
+  margin: 0;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.board-more-link {
+  color: var(--color-text-primary);
+  font-weight: 500;
+  min-height: auto; /* 헤더 여백에 맞춰 조정 */
+  font-size: 14px;
+}
+
+.board-more-link span {
+  font-size: 16px;
+  vertical-align: middle;
+  line-height: 1;
+}
+
+.board-list {
+  list-style: none;
+}
+
+.board-list-item {
+  border-bottom: 1px solid var(--color-border-light);
+}
+
+.board-post-link {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 0;
+  width: 100%;
+}
+
+.board-post-title {
+  color: var(--color-text-primary);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  flex: 1;
+  margin-right: 16px;
+  font-size: 12px;
+}
+
+.board-post-date {
+  color: var(--color-text-secondary);
+  white-space: nowrap;
+  font-size: 12px;
+}
+
+/* Tablet Layout */
+@media (min-width: 768px) {
+  .board-title {
+    font-size: 24px;
+  }
+
+  .board-more-link {
+    font-size: 15px;
+  }
+
+  .board-more-link span {
+    font-size: 18px;
+  }
+
+  .board-post-title {
+    font-size: 14px;
+  }
+
+  .board-post-date {
+    font-size: 14px;
+  }
+}
+
+/* Desktop Layout */
+@media (min-width: 1024px) {
+  .board-title {
+    font-size: 28px;
+  }
+
+  .board-more-link {
+    font-size: 16px;
+  }
+  
+  .board-more-link span {
+    font-size: 20px; /* 아이콘인 + 기호도 비례해서 조금 더 크게 */
+  }
+
+  .board-post-title,
+  .board-post-date {
+    font-size: 18px;
+  }
+}

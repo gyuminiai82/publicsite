@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;500;600&display=swap');
+
+:root {
+  /* Primary & Secondary */
+  --color-primary: #005D3A;
+  --color-primary-light: #388E3C;
+  --color-primary-lighter: #81C784;
+  --color-secondary: #B85C00; /* Updated for 4.5:1 contrast with white */
+
+  /* Neutral */
+  --color-text-primary: #1F2937;
+  --color-text-secondary: #4B5563;
+  --color-text-muted: #6B7280;
+  --color-border-dark: #D1D5DB;
+  --color-border-light: #E5E7EB;
+  --color-white: #FFFFFF;
+  --color-black: #000000;
+  --color-background: #F9FAFB;
+
+  /* Semantic */
+  --color-error: #D32F2F; /* 접근성(Lighthouse)을 위해 명도 대비 4.5:1 이상인 진한 빨간색으로 변경 */
+  --color-warning: #FF9800;
+  --color-success: #4CAF50;
+  --color-info: #2196F3;
+
+  /* Typography */
+  --font-family: 'Noto Sans', sans-serif;
+
+  /* Radius & Effects */
+  --radius-sm: 4px;
+  --radius-md: 8px;
+  --shadow-md: 2px 2px 8px rgba(0, 0, 0, 0.10);
+}
+
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-family);
+  background-color: var(--color-background);
+  color: var(--color-text-primary);
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Web Accessibility: Touch Target & Font Size */
+html {
+  font-size: 16px;
+}
+
+button, 
+input[type="text"], 
+input[type="search"], 
+select {
+  font-family: inherit;
+  font-size: 16px;
+  min-height: 44px;
+  min-width: 44px;
+}
+
+/* Screen Reader Only 유틸리티 클래스 (접근성 향상) */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
+/* 유틸리티 클래스 */
+.text-caption {
+  font-size: 12px;
+  line-height: 16px;
+}
+
+.text-body {
+  font-size: 16px;
+  line-height: 22px;
+}
+
+.text-heading {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 27px;
+}
+
+.text-subtitle {
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 30px;
+}
+
+.text-title {
+  font-size: 20px; /* Mobile default */
+  font-weight: 700; /* Bolder font for section titles */
+  line-height: 1.4;
+}
+
+@media (min-width: 768px) {
+  .text-title {
+    font-size: 28px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .text-title {
+    font-size: 32px;
+  }
+}
+
+/* Layout Utilities */
+.boards-container {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--color-white);
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+@media (min-width: 768px) {
+  .boards-container {
+    flex-direction: row;
+    gap: 32px;
+    padding: 0 16px;
+  }
+  
+  .boards-container > * {
+    flex: 1;
+    min-width: 0; /* Prevent flex children from expanding past 50% */
+  }
+}
+
+/* Desktop Layout */
+@media (min-width: 1024px) {
+  .boards-container {
+    gap: 48px;
+  }
+}

@@ -1,0 +1,338 @@
+.search-results-page {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0;
+  background-color: var(--color-white);
+  min-height: 80vh;
+}
+
+/* Filters Section (wrap:period & wrap:sort) */
+.search-filters-container {
+  display: flex;
+  flex-direction: column;
+  padding: 32px 16px 0 16px;
+  gap: 32px;
+  background-color: transparent;
+}
+
+.filter-group {
+  display: flex;
+  flex-direction: column;
+  gap: 16px; /* spacing between text and buttons */
+}
+
+.sort-group {
+  flex-direction: row;
+  align-items: center;
+  gap: 8px; /* space between label and selector */
+  justify-content: flex-start;
+}
+
+.filter-label {
+  font-size: 20px;
+  font-weight: 500;
+  color: #000000;
+  line-height: 1.4;
+}
+
+.period-buttons {
+  display: flex;
+  gap: 8px;
+  width: 100%;
+}
+
+.period-btn {
+  flex: 1;
+  min-width: 0;
+  height: 46px;
+  padding: 0;
+  border: 1px solid #1F2937;
+  background-color: #FFFFFF;
+  border-radius: 4px;
+  font-size: 18px; /* Slightly scaled down from 22px to fit mobile */
+  color: #1F2937;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  white-space: nowrap;
+}
+
+.period-btn.active {
+  background-color: #EC9C46; /* Orange from Figma */
+  color: #FFFFFF;
+  border-color: #EC9C46;
+}
+
+.sort-selector-wrapper {
+  position: relative;
+}
+
+.sort-selector {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  padding: 8px 0; /* No border for text, just an icon */
+  background-color: transparent;
+  cursor: pointer;
+  border: none;
+}
+
+.sort-text {
+  font-size: 16px;
+  font-weight: 400;
+  color: #000000;
+}
+
+.sort-icon {
+  width: 20px;
+  height: 20px;
+  color: #000000;
+}
+
+.sort-dropdown {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 120px;
+  background-color: #FFFFFF;
+  border: 1px solid #D1D5DB;
+  border-radius: 4px;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  list-style: none;
+  padding: 8px 0;
+  margin: 4px 0 0 0;
+  z-index: 10;
+}
+
+.sort-option {
+  padding: 8px 16px;
+  font-size: 16px;
+  color: #1F2937;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.sort-option:hover {
+  background-color: #F3F4F6;
+}
+
+.sort-option.active {
+  font-weight: 500;
+  background-color: #F9FAFB;
+}
+
+/* Summary Header */
+.search-summary-header {
+  padding: 24px 16px 16px 16px;
+  border-bottom: 2px solid var(--color-text-primary);
+  text-align: center;
+}
+
+.search-summary-header h2 {
+  font-size: 24px; /* Figma Mobile: 22px, but using 24px for scale */
+  font-weight: 600;
+  color: var(--color-text-primary);
+  margin: 0;
+}
+
+.keyword-highlight {
+  color: #1967D2; /* Blue from Figma override */
+}
+
+/* Results Content */
+.search-results-content {
+  padding: 0 16px 48px 16px;
+}
+
+.result-section {
+  padding: 32px 0;
+}
+
+.section-title {
+  font-size: 20px;
+  font-weight: 600;
+  color: var(--color-text-primary);
+  margin: 0 0 20px 0;
+}
+
+.result-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0; /* Removed gap because border provides separation with padding */
+}
+
+/* Search Result Item (searchresult INSTANCE) */
+.result-card {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 16px 0;
+  border-bottom: 1px solid #D1D5DB; /* Figma stroke color */
+}
+
+.result-title {
+  font-size: 20px;
+  font-weight: 500;
+  color: var(--color-text-primary);
+  line-height: 1.35; /* ~27px */
+  margin: 0;
+}
+
+.result-desc {
+  font-size: 16px;
+  font-weight: 400;
+  color: #374151; /* specific color from Figma */
+  line-height: 1.4; /* ~21.8px */
+  margin: 0;
+  display: -webkit-box;
+  line-clamp: 3;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.result-path {
+  font-size: 16px;
+  font-weight: 400;
+  color: var(--color-text-secondary);
+  line-height: 1.4;
+  margin-top: 4px;
+}
+
+/* More Button */
+.more-btn-wrapper {
+  display: flex;
+  justify-content: flex-end;
+  padding: 16px 8px;
+}
+
+.more-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  width: 93px;
+  height: 43px;
+  background-color: transparent;
+  border: 1px solid #1F2937;
+  border-radius: 4px;
+  font-size: 16px;
+  font-weight: 500;
+  color: #1F2937;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.more-btn:hover {
+  background-color: #F9FAFB;
+}
+
+/* Tablet Adjustments (>= 768px) */
+@media (min-width: 768px) {
+  .search-filters-container {
+    padding: 32px 16px 0 16px;
+    gap: 40px;
+  }
+  
+  .filter-group {
+    gap: 24px;
+  }
+
+  .filter-label {
+    font-size: 28px;
+  }
+
+  .period-btn {
+    height: 60px;
+    font-size: 28px; /* Figma says 32, using 28 for slightly better fit */
+  }
+
+  .sort-text {
+    font-size: 20px;
+  }
+
+  .search-summary-header {
+    padding: 32px 16px 16px 16px;
+  }
+
+  .search-summary-header h2 {
+    font-size: 32px;
+  }
+
+  .section-title {
+    font-size: 24px;
+  }
+
+  .result-title {
+    font-size: 24px;
+  }
+
+  .result-desc {
+    font-size: 18px;
+  }
+}
+
+/* Desktop Adjustments (>= 1024px) */
+@media (min-width: 1024px) {
+  .search-filters-container {
+    padding: 48px 32px 0 32px;
+    gap: 48px;
+  }
+
+  .filter-label {
+    font-size: 32px;
+  }
+
+  .period-btn {
+    height: 81px;
+    font-size: 40px; /* Figma says 48, using 40 for responsiveness */
+    border-radius: 8px; /* Slightly larger radius for desktop buttons */
+  }
+
+  .sort-text {
+    font-size: 24px;
+  }
+  
+  .sort-icon {
+    width: 28px;
+    height: 28px;
+  }
+
+  .search-summary-header {
+    padding: 48px 32px 24px 32px;
+  }
+
+  .search-summary-header h2 {
+    font-size: 48px;
+  }
+
+  .search-results-content {
+    padding: 0 32px 64px 32px;
+  }
+
+  .section-title {
+    font-size: 28px;
+    margin-bottom: 24px;
+  }
+
+  .result-card {
+    padding: 24px 0;
+    gap: 12px;
+  }
+
+  .result-title {
+    font-size: 28px;
+  }
+
+  .result-desc {
+    font-size: 20px;
+  }
+
+  .result-path {
+    font-size: 18px;
+  }
+}

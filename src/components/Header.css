@@ -1,0 +1,135 @@
+.header {
+  width: 100%;
+  background-color: var(--color-white);
+  border-bottom: 1px solid var(--color-border-light);
+  padding: 0 16px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.header-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 60px;
+}
+
+.header-logo {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.logo-icon-img {
+  height: 32px;
+  width: auto;
+  object-fit: contain;
+}
+
+.logo-text {
+  color: var(--color-primary);
+  margin: 0;
+  font-weight: 500;
+  font-size: 18px; /* 피그마 렌더링 비율에 맞춤 */
+}
+
+.header-actions {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.search-trigger-btn {
+  background: none;
+  border: none;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  color: var(--color-text-primary);
+  cursor: pointer;
+  min-height: 44px;
+  padding: 0 4px;
+}
+
+.search-trigger-text {
+  font-weight: 500;
+}
+
+.menu-btn {
+  background: none;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 44px;
+  min-height: 44px;
+  cursor: pointer;
+}
+
+.hamburger-icon {
+  display: block;
+  width: 20px;
+  height: 2px;
+  background-color: var(--color-text-primary);
+  position: relative;
+}
+
+.hamburger-icon::before,
+.hamburger-icon::after {
+  content: '';
+  position: absolute;
+  width: 20px;
+  height: 2px;
+  background-color: var(--color-text-primary);
+  left: 0;
+}
+
+.hamburger-icon::before { top: -6px; }
+.hamburger-icon::after { bottom: -6px; }
+
+/* Desktop Navigation (Hidden by default) */
+.desktop-nav {
+  display: none;
+}
+
+/* Desktop Layout */
+@media (min-width: 1024px) {
+  .menu-btn {
+    display: none;
+  }
+  
+  .desktop-nav {
+    display: block;
+    flex: 1;
+    margin: 0 40px;
+  }
+  
+  .desktop-nav-list {
+    display: flex;
+    justify-content: center;
+    gap: 32px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .desktop-nav-link {
+    color: var(--color-black);
+    font-size: 18px;
+    font-weight: 500;
+    text-decoration: none;
+    transition: color 0.2s;
+  }
+  
+  .desktop-nav-link:hover,
+  .desktop-nav-link:focus {
+    color: var(--color-primary);
+  }
+
+  .search-trigger-text {
+    font-size: 18px;
+  }
+}
