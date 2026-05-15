@@ -10,13 +10,15 @@
   display: flex;
   justify-content: center;
   align-items: flex-start;
-  overflow-y: auto;
+  overflow: hidden;
 }
 
 .search-modal-container {
   width: 100%;
-  max-width: 600px; /* Optional constraint for tablet/desktop */
+  max-width: 600px;
+  /* Optional constraint for tablet/desktop */
   min-height: 100vh;
+  max-height: 100vh;
   background-color: var(--color-white);
   display: flex;
   flex-direction: column;
@@ -44,6 +46,8 @@
   padding: 0 32px 32px 32px;
   display: flex;
   flex-direction: column;
+  flex-grow: 1;
+  overflow: hidden;
   gap: 64px;
 }
 
@@ -64,7 +68,8 @@
 .search-input-box {
   display: flex;
   align-items: center;
-  background-color: #E5E7EB; /* Gray background from Figma */
+  background-color: #E5E7EB;
+  /* Gray background from Figma */
   border-radius: var(--radius-sm);
   padding: 8px 16px;
   border: 2px solid transparent;
@@ -111,7 +116,10 @@
 .search-keywords-section {
   display: flex;
   flex-direction: column;
+  flex-grow: 1;
+  overflow-y: auto;
   gap: 64px;
+  padding-bottom: 32px;
 }
 
 .keyword-group {
@@ -128,7 +136,8 @@
 }
 
 /* Popular List */
-.popular-list, .recent-list {
+.popular-list,
+.recent-list {
   list-style: none;
   padding: 0;
   margin: 0;
@@ -153,7 +162,8 @@
 .popular-rank {
   font-size: 20px;
   font-weight: 600;
-  color: var(--color-primary); /* Use primary color for rank numbers */
+  color: var(--color-primary);
+  /* Use primary color for rank numbers */
   width: 24px;
 }
 
@@ -172,15 +182,18 @@
 }
 
 .trend-icon.up {
-  color: #EF4444; /* Red */
+  color: #EF4444;
+  /* Red */
 }
 
 .trend-icon.down {
-  color: #3B82F6; /* Blue */
+  color: #3B82F6;
+  /* Blue */
 }
 
 .trend-icon.same {
-  color: var(--color-black); /* Black dash */
+  color: var(--color-black);
+  /* Black dash */
 }
 
 .trend-change {
@@ -296,7 +309,7 @@
   .recent-keyword {
     font-size: 32px;
   }
-  
+
   .popular-trend {
     font-size: 20px;
   }

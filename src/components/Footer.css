@@ -17,7 +17,7 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 8px;
+  gap: 7px;
   align-items: center;
 }
 
@@ -33,7 +33,7 @@
 
 .footer-bottom {
   background-color: var(--color-background);
-  padding: 32px 16px;
+  padding: 32px 8px;
   border-top: 1px solid var(--color-border-light);
 }
 
@@ -74,7 +74,8 @@
   display: flex;
   gap: 8px;
   width: 100%;
-  max-width: 171px; /* Mobile width requested by user */
+  max-width: 171px;
+  /* Mobile width requested by user */
 }
 
 .family-select {
@@ -84,7 +85,8 @@
   border-radius: var(--radius-sm);
   background-color: var(--color-white);
   color: var(--color-text-primary);
-  min-height: 44px; /* 접근성 보장 */
+  min-height: 44px;
+  /* 접근성 보장 */
 }
 
 .family-btn {
@@ -95,7 +97,8 @@
   padding: 0 16px;
   cursor: pointer;
   min-height: 44px;
-  white-space: nowrap; /* 버튼 텍스트 줄바꿈 방지 */
+  white-space: nowrap;
+  /* 버튼 텍스트 줄바꿈 방지 */
 }
 
 .footer-address {
@@ -123,30 +126,34 @@
     padding: 0 32px;
     gap: 0;
   }
-  
+
+  .footer-bottom {
+    padding: 32px 16px;
+  }
+
   .footer-bottom-container {
     display: grid;
     grid-template-columns: 1fr auto;
     grid-template-rows: auto auto;
     gap: 16px 24px;
   }
-  
+
   /* Unwrap the policy row contents so they participate in the grid */
   .footer-policy-row {
     display: contents;
   }
-  
+
   .footer-policy {
     grid-column: 1 / 2;
     grid-row: 1 / 2;
   }
-  
+
   .footer-family-site {
     grid-column: 2 / 3;
     grid-row: 1 / 3;
     align-self: flex-start;
   }
-  
+
   .footer-address {
     grid-column: 1 / 2;
     grid-row: 2 / 3;
@@ -174,6 +181,10 @@
     justify-content: space-between;
     padding: 0 128px;
     gap: 0;
+  }
+
+  .footer-bottom {
+    padding: 32px 16px;
   }
 
   .footer-nav-link,
