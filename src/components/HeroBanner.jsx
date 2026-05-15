@@ -6,25 +6,29 @@ const slides = [
     id: 0,
     badge: '연구사업',
     title: '농업의 내일을 설계하는 첨단 \n과학의 힘, 경기도가 앞장섭니다.',
-    bg: import.meta.env.BASE_URL + 'assets/hero-bg-1.png'
+    bg: import.meta.env.BASE_URL + 'assets/hero-bg-1.png',
+    link: 'https://nongup.gg.go.kr/works/28'
   },
   {
     id: 1,
     badge: '지도사업',
     title: '농업인의 든든한 파트너, 현장에서 \n답을 찾는 맞춤형 지도사업.',
-    bg: import.meta.env.BASE_URL + 'assets/hero-bg-2.png'
+    bg: import.meta.env.BASE_URL + 'assets/hero-bg-2.png',
+    link: 'https://nongup.gg.go.kr/works/28'
   },
   {
     id: 2,
     badge: '품목별 정보',
     title: '심는 순간부터 수확까지, 성공 \n농사를 위한 품목별 맞춤 가이드.',
-    bg: import.meta.env.BASE_URL + 'assets/hero-bg-3.png'
+    bg: import.meta.env.BASE_URL + 'assets/hero-bg-3.png',
+    link: 'https://nongup.gg.go.kr/data/57'
   },
   {
     id: 3,
     badge: '신품종 육성',
     title: '경기도의 이름으로 피어난 우리 \n품종,세계의 입맛을 사로잡습니다.',
-    bg: import.meta.env.BASE_URL + 'assets/hero-bg-4.png'
+    bg: import.meta.env.BASE_URL + 'assets/hero-bg-4.png',
+    link: 'https://nongup.gg.go.kr/data/107311'
   }
 ];
 
@@ -82,11 +86,11 @@ function HeroBanner() {
       </div>
 
       <div className="hero-controls">
-        <button className="hero-link-btn" aria-label="자세히 보기">
+        <a href={currentData.link} target="_blank" rel="noreferrer" className="hero-link-btn" aria-label="자세히 보기">
           <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
             <path d="M5 12h14M12 5l7 7-7 7" />
           </svg>
-        </button>
+        </a>
 
         <div className="hero-slider-controls">
           <button className="ctrl-btn" onClick={prevSlide} aria-label="이전 슬라이드">
