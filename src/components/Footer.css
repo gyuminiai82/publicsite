@@ -72,7 +72,7 @@
 
 .footer-family-site {
   display: flex;
-  gap: 8px;
+  gap: 4px;
   width: 100%;
   max-width: 171px;
   /* Mobile width requested by user */
