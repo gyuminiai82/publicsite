@@ -6,7 +6,7 @@ function BoardSection({ title, items, moreLink }) {
     <section className="board-section" aria-labelledby={`board-title-${title}`}>
       <div className="board-header">
         <h2 id={`board-title-${title}`} className="board-title">{title}</h2>
-        <a href={moreLink} target="_blank" rel="noreferrer" className="board-more-link" aria-label={`${title} 더보기`}>
+        <a href={moreLink} rel="noreferrer" className="board-more-link" aria-label={`${title} 더보기`}>
           더보기 <span>+</span>
         </a>
       </div>
