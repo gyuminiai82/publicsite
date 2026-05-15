@@ -86,7 +86,7 @@ function HeroBanner() {
       </div>
 
       <div className="hero-controls">
-        <a href={currentData.link} target="_blank" rel="noreferrer" className="hero-link-btn" aria-label="자세히 보기">
+        <a href={currentData.link} rel="noreferrer" className="hero-link-btn" aria-label="자세히 보기">
           <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
             <path d="M5 12h14M12 5l7 7-7 7" />
           </svg>
