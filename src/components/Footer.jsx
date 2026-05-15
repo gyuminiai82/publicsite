@@ -8,13 +8,13 @@ function Footer() {
       <div className="footer-top">
         <div className="footer-top-container">
           <ul className="footer-nav-list">
-            <li><a href="#about" className="footer-nav-link">기술원 소개</a></li>
+            <li><a href="https://nongup.gg.go.kr/intro/12" className="footer-nav-link">기술원 소개</a></li>
             <li><span className="divider" aria-hidden="true">|</span></li>
-            <li><a href="#news" className="footer-nav-link">기술원 소식</a></li>
+            <li><a href="https://nongup.gg.go.kr/noti/36" className="footer-nav-link">기술원 소식</a></li>
             <li><span className="divider" aria-hidden="true">|</span></li>
-            <li><a href="#bid" className="footer-nav-link">입찰정보</a></li>
+            <li><a href="https://www.g2b.go.kr/link/FIUA006_01/single/?untySrchSeCd=BK+BUK&rowCnt=&instCd=6410563%2C6410568%2C6410567&demaInstNm=&hghrkInstCd=&prcmBsneAreaCd=%EC%A0%84%EC%B2%B4+%EC%A1%B0070001+%EC%A1%B0070002+%EC%A1%B0070003+%EC%A1%B0070004+%EC%A1%B0070005&prcmMthoSeCd=&frcpYn=N&laseYn=N&rsrvYn=N&chkInstCd=&urlSrchSeCd=instCd&demaInstCd=IN0100000060276%2CIN0100000039182%2CIN0100000060008&prcmMaagSeCd=" className="footer-nav-link">입찰정보</a></li>
             <li><span className="divider" aria-hidden="true">|</span></li>
-            <li><a href="#press" className="footer-nav-link">보도자료</a></li>
+            <li><a href="https://nongup.gg.go.kr/noti/30" className="footer-nav-link">보도자료</a></li>
             <li><span className="divider" aria-hidden="true">|</span></li>
             <li><a href="#institute" className="footer-nav-link">연구소 안내</a></li>
           </ul>

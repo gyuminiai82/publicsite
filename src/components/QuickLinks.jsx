@@ -2,10 +2,10 @@ import React from 'react';
 import './QuickLinks.css';
 
 const links = [
-  { id: 1, title: '농산물\n가격정보', icon: import.meta.env.BASE_URL + 'assets/icon-price.svg' },
-  { id: 2, title: '병해충\n발생정보', icon: import.meta.env.BASE_URL + 'assets/icon-bug.svg' },
-  { id: 3, title: '농업기술\n상담', icon: import.meta.env.BASE_URL + 'assets/icon-consult.svg' },
-  { id: 4, title: '사이버\n식물병원', icon: import.meta.env.BASE_URL + 'assets/icon-hospital.svg' },
+  { id: 1, title: '농산물\n가격정보', icon: import.meta.env.BASE_URL + 'assets/icon-price.svg', url: 'https://nongup.gg.go.kr/data/62' },
+  { id: 2, title: '병해충\n발생정보', icon: import.meta.env.BASE_URL + 'assets/icon-bug.svg', url: 'https://nongup.gg.go.kr/data/57' },
+  { id: 3, title: '농업기술\n상담', icon: import.meta.env.BASE_URL + 'assets/icon-consult.svg', url: 'https://nongup.gg.go.kr/works/121156' },
+  { id: 4, title: '사이버\n식물병원', icon: import.meta.env.BASE_URL + 'assets/icon-hospital.svg', url: 'https://nongup.gg.go.kr/works/26' },
 ];
 
 function QuickLinks() {
@@ -13,7 +13,7 @@ function QuickLinks() {
     <section className="quick-links-section" aria-label="빠른 메뉴">
       <div className="quick-links-grid">
         {links.map((link) => (
-          <a key={link.id} href={`#link${link.id}`} className="quick-link-card">
+          <a key={link.id} href={`${link.url}`} className="quick-link-card">
             <h3 className="quick-link-title text-heading">
               {link.title.split('\n').map((line, idx) => (
                 <React.Fragment key={idx}>
