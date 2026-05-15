@@ -120,6 +120,10 @@
   overflow-y: auto;
   gap: 64px;
   padding-bottom: 32px;
+  margin-left: -32px;
+  margin-right: -32px;
+  padding-left: 32px;
+  padding-right: 32px;
 }
 
 .keyword-group {
@@ -284,6 +288,13 @@
   .search-modal-content {
     padding: 0 64px 64px 64px;
     gap: 128px;
+  }
+
+  .search-keywords-section {
+    margin-left: -64px;
+    margin-right: -64px;
+    padding-left: 64px;
+    padding-right: 64px;
   }
 
   .search-label {
