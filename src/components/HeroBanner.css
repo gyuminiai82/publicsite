@@ -111,6 +111,11 @@
   outline: none;
 }
 
+/* 모바일에서 오른쪽 화살표와 정지 버튼 사이 간격 축소 */
+.hero-slider-controls .ctrl-btn:last-child {
+  margin-left: -16px;
+}
+
 .pagination {
   display: flex;
   align-items: center;
@@ -156,6 +161,10 @@
   .hero-banner {
     min-height: 400px;
     padding: 40px 32px 24px 32px;
+  }
+  
+  .hero-slider-controls .ctrl-btn:last-child {
+    margin-left: 0; /* 태블릿 이상에서는 원래 간격 유지 */
   }
   
   .hero-title {

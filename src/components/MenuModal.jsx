@@ -2,16 +2,16 @@ import React, { useEffect } from 'react';
 import './MenuModal.css';
 
 const menuItems = [
-  { id: 1, label: '기술사업화', link: '#' },
-  { id: 2, label: '원장과의 대화', link: '#' },
-  { id: 3, label: '기관방문 안내', link: '#' },
-  { id: 4, label: '육성단체', link: '#' },
-  { id: 5, label: '농사정보', link: '#' },
-  { id: 6, label: '농업 경영정보', link: '#' }
+  { id: 1, label: '기술사업화', link: 'https://nongup.gg.go.kr/works/181' },
+  { id: 2, label: '원장과의 대화', link: 'https://nongup.gg.go.kr/com/24252' },
+  { id: 3, label: '기관방문 안내', link: 'https://nongup.gg.go.kr/intro/8' },
+  { id: 4, label: '육성단체', link: 'https://nongup.gg.go.kr/intro/112152' },
+  { id: 5, label: '농사정보', link: 'https://nongup.gg.go.kr/data/57' },
+  { id: 6, label: '농업 경영정보', link: 'https://nongup.gg.go.kr/data/63' }
 ];
 
 function MenuModal({ isOpen, onClose }) {
-  
+
   // Prevent body scrolling when modal is open
   useEffect(() => {
     if (isOpen) {
@@ -29,7 +29,7 @@ function MenuModal({ isOpen, onClose }) {
   return (
     <div className="menu-modal-overlay" role="dialog" aria-modal="true" aria-label="전체 메뉴">
       <div className="menu-modal-container">
-        
+
         {/* Header - Close Button Only */}
         <div className="menu-modal-header">
           <button className="menu-close-btn" onClick={onClose} aria-label="메뉴 닫기">
@@ -39,7 +39,7 @@ function MenuModal({ isOpen, onClose }) {
             </svg>
           </button>
         </div>
-        
+
         {/* Menu List */}
         <div className="menu-modal-content">
           <ul className="menu-list">
@@ -52,7 +52,7 @@ function MenuModal({ isOpen, onClose }) {
             ))}
           </ul>
         </div>
-        
+
       </div>
     </div>
   );
