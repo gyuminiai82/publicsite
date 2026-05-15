@@ -47,8 +47,8 @@ function App() {
             <HeroBanner />
             <QuickLinks />
             <div className="boards-container">
-              <BoardSection title="기술원소식" items={newsItems} />
-              <BoardSection title="교육정보" items={eduItems} />
+              <BoardSection title="기술원소식" items={newsItems} moreLink="https://nongup.gg.go.kr/noti/36" />
+              <BoardSection title="교육정보" items={eduItems} moreLink="https://nongup.gg.go.kr/works/28" />
             </div>
           </>
         ) : (

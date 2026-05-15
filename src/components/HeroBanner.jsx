@@ -21,7 +21,7 @@ const slides = [
     badge: '품목별 정보',
     title: '심는 순간부터 수확까지, 성공 \n농사를 위한 품목별 맞춤 가이드.',
     bg: import.meta.env.BASE_URL + 'assets/hero-bg-3.png',
-    link: 'https://nongup.gg.go.kr/data/57'
+    link: 'https://nongup.gg.go.kr/data/107318'
   },
   {
     id: 3,
