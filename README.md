@@ -11,9 +11,9 @@
 
 ## 2. 배포 및 관련 링크
 
-- **Live Demo:** [배포된 웹사이트 링크 입력](https://gyuminiai82.github.io/publicsite)
-- **GitHub Repository:** [깃허브 링크 입력](https://github.com/gyuminiai82/publicsite)
-- **Design (Figma):** [피그마 시안 링크 입력](https://www.figma.com/design/sG3ex19uVrhKu2jn5YLaUK/%EA%B3%B5%EA%B3%B5%EC%82%AC%EC%9D%B4%ED%8A%B8-%EA%B0%9C%EC%84%A0?node-id=110-768&t=qwJgrfQelXIw8Ciz-0)
+- **Live Demo:** <a href="https://gyuminiai82.github.io/publicsite" target="_blank">배포된 웹사이트 링크 입력</a>
+- **GitHub Repository:** <a href="https://github.com/gyuminiai82/publicsite" target="_blank">깃허브 링크 입력</a>
+- **Design (Figma):** <a href="https://www.figma.com/design/sG3ex19uVrhKu2jn5YLaUK/%EA%B3%B5%EA%B3%B5%EC%82%AC%EC%9D%B4%ED%8A%B8-%EA%B0%9C%EC%84%A0?node-id=110-768&t=qwJgrfQelXIw8Ciz-0" target="_blank">피그마 시안 링크 입력</a>
 
 ---
 
