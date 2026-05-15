@@ -11,7 +11,7 @@
 
 ## 2. 배포 및 관련 링크
 
-- **Live Demo:** [배포된 웹사이트 링크 입력](https://gyuminiai82.github.io/publicsite/)
+- **Live Demo:** [배포된 웹사이트 링크 입력](https://gyuminiai82.github.io/publicsite)
 - **GitHub Repository:** [깃허브 링크 입력](https://github.com/gyuminiai82/publicsite)
 - **Design (Figma):** [피그마 시안 링크 입력](https://www.figma.com/design/sG3ex19uVrhKu2jn5YLaUK/%EA%B3%B5%EA%B3%B5%EC%82%AC%EC%9D%B4%ED%8A%B8-%EA%B0%9C%EC%84%A0?node-id=110-768&t=qwJgrfQelXIw8Ciz-0)
 
@@ -27,6 +27,8 @@
 
 - **Figma:** 웹 접근성 체크리스트를 기반으로 한 UI/UX 설계 및 프로토타이핑
 - **Lighthouse / Axe-core:** 웹 접근성 진단 및 품질 지표 측정을 위한 도구 활용
+
+![Lighthouse 진단 결과](./public/image.png)
 
 ### AI-Assisted Development (Vibe Coding)
 
