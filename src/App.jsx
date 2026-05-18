@@ -1,10 +1,10 @@
-import React, { useState } from 'react';
+import React, { useState, Suspense, lazy } from 'react';
 import Header from './components/Header';
 import HeroBanner from './components/HeroBanner';
 import QuickLinks from './components/QuickLinks';
 import BoardSection from './components/BoardSection';
 import Footer from './components/Footer';
-import SearchResultsPage from './components/SearchResultsPage';
+const SearchResultsPage = lazy(() => import('./components/SearchResultsPage'));
 
 function App() {
   const [currentView, setCurrentView] = useState('main'); // 'main' or 'search'
@@ -52,7 +52,9 @@ function App() {
             </div>
           </>
         ) : (
-          <SearchResultsPage keyword={searchKeyword} />
+          <Suspense fallback={<div style={{ padding: '40px', textAlign: 'center' }}>Loading...</div>}>
+            <SearchResultsPage keyword={searchKeyword} />
+          </Suspense>
         )}
       </main>
       <Footer />

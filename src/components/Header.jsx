@@ -27,7 +27,7 @@ function Header({ onSearch, onGoHome }) {
         <div className="header-container">
           {/* Logo Section */}
           <a href="/" className="header-logo" onClick={handleLogoClick} aria-label="경기도농업기술원 홈으로 이동">
-            <img src={`${import.meta.env.BASE_URL}assets/logo.png`} alt="" className="logo-icon-img" aria-hidden="true" />
+            <img src={`${import.meta.env.BASE_URL}assets/logo.webp`} alt="" className="logo-icon-img" aria-hidden="true" fetchpriority="high" />
             <h1 className="text-heading logo-text">경기도농업기술원</h1>
           </a>
 
